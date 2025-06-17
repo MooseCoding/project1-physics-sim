@@ -1,6 +1,6 @@
 #include "physics.h"
 
-void update_particle(Particle* particles, int number, double time_step, double g, int width, int height) {
+void update_particles(Particle* particles, int number, double time_step, double g, int width, int height) {
     for(int i = 0; i < number; i++) {
         particles[i].vy -= g * time_step;
 
